@@ -8,3 +8,11 @@ Solution: Place an intermediate app wrote on nodejs to serve the streaming addin
 The code on this repository is a copy, paste and try, but it works :)
 
 I have 2 versions of the code, one of them starts the gstreamer pipeline on the fly spawning a child process, while the other just create the TCP server and is up to you to start the pipeline, the only change is found when starting the the TCP server (tcpServer.listen(8081... ) where we add the function to start the child process.
+
+To use it on your website, just add:
+
+<video id="video" width="320" autoplay="autoplay" preload>
+       <source src="http://<ip>:8080">
+</video>
+
+Or just open <ip>:8080 on your browser.

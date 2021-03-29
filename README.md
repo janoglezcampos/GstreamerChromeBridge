@@ -11,8 +11,10 @@ I have 2 versions of the code, one of them starts the gstreamer pipeline on the 
 
 To use it on your website, just add:
 
+```HTML
 <video id="video" width="320" autoplay="autoplay" preload>
        <source src="http://<ip>:8080">
 </video>
+```
 
-Or just open <ip>:8080 on your browser.
+Or just open ip:8080 on your browser.
